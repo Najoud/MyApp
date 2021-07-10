@@ -10,7 +10,7 @@ public interface APICalls {
     @GET("api/radio/radio_ar.json")
     Call<ResponseModel> getAllSources(@Query("apikey") String apikey);
 
-    @GET("radio/radio_ar.json")
+    @GET("api/radio/radio_ar.json")
     Call<RadioResponse> getAllSources();
 
 
