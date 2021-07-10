@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SabhaFragment"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="755dp"
+            android:src="@drawable/imagr_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/alahakper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_marginRight="10dp"
+            android:text="الله أكبر"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/subhan"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:text="         اسلامي      "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/بني"
+            android:textSize="50dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/subhan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total"
+            app:layout_goneMarginTop="100dp" />
+
+
+        <Button
+            android:id="@+id/buttontotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المجموع"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.172" />
+
+        <ImageButton
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/icon_refresh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/alahakper"
+            app:layout_constraintStart_toStartOf="@+id/alahakper"
+            app:layout_constraintTop_toBottomOf="@+id/alahakper"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="0dp"
+            android:text="0"
+            android:textColor="@color/بني"
+            android:textSize="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttontotal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textviewAlaakber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="0"
+            android:layout_marginTop="40sp"
+            android:textColor="@color/بني"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/alahakper"
+            app:layout_constraintEnd_toEndOf="@+id/alahakper"
+            app:layout_constraintStart_toStartOf="@+id/alahakper"
+    />
+
+
+        <TextView
+            android:id="@+id/textviewSubhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="0"
+            android:layout_marginTop="40sp"
+            android:textColor="@color/بني"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/subhan"
+            app:layout_constraintEnd_toEndOf="@+id/subhan"
+            app:layout_constraintStart_toStartOf="@+id/subhan"
+            />
+        <TextView
+            android:id="@+id/textviewAlhamed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="0"
+            android:layout_marginTop="40sp"
+            android:textColor="@color/بني"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/alhmed"
+            app:layout_constraintEnd_toEndOf="@+id/alhmed"
+            app:layout_constraintStart_toStartOf="@+id/alhmed"
+            />
+
+        <Button
+            android:id="@+id/alhmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="0dp"
+            android:text="الحمدلله"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/subhan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/subhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:text="سبحان الله"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/alahakper"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toEndOf="@+id/alhmed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.874" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

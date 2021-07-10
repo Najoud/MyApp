@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My App(Islami)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="refresh_icon">refresh_icon</string>
+    <string name="sebha_img">sebha_img</string>
+    <string name="ـ0">0</string>
+<!--    <string name="0ـ">0</string>-->
+    <array name="tsbeh_array">
+        <item>الحمد لله</item>
+        <item>سبحان الله</item>
+        <item>الله اكبر</item>
+    </array>
+</resources>
