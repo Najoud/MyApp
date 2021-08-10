@@ -33,7 +33,7 @@ public class APIManager {
                     .build();
 
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://mp3quran.net/")
+                    .baseUrl("http://mp3quran.net/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build();

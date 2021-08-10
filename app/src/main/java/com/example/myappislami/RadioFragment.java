@@ -40,7 +40,6 @@ public class RadioFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_radio,container,false);
-         view = binding.getRoot();
         //onCreateDataList();
         callRadios();
         adapter = new RadioRecyclerAdapter(null);
@@ -64,29 +63,32 @@ public class RadioFragment extends Fragment {
                 stopsound();
             }
         });
-
+        view = binding.getRoot();
         return view;
     }
 
     public void callRadios() {
         APIManager.getAPIS().getAllSources().enqueue(new Callback<RadioResponse>() {
             @Override
-            public void onResponse(Call<RadioResponse> call,Response<RadioResponse> response) {
-             // adapter = new RadioRecyclerAdapter(response.body().getRadios());
-              //adapter.changeData(response.body().getRadios());
-            //  binding.recyclerView.setAdapter(adapter);
+            public void onResponse(Call<RadioResponse> call, Response<RadioResponse> response) {
+                if (response.isSuccessful()) {
+                    adapter.changeData(response.body().getRadios());
+                }
+                else
+                    Log.e("TAG","onFailure: " );
+
             }
 
-
             @Override
-            public void onFailure(Call<RadioResponse> call,Throwable t) {
+            public void onFailure(Call<RadioResponse> call, Throwable t) {
                 Log.e("TAG","onFailure: " + t.getLocalizedMessage());
-
 
             }
         });
-
     }
+
+
+
 
 
 
